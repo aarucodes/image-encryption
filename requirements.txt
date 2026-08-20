@@ -1,0 +1,33 @@
+# adversarial-protect requirements
+# CPU and CUDA compatible (torch/torchvision auto-selects CUDA if available)
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# For CUDA support, install PyTorch separately first:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# Then install the rest:
+#   pip install -r requirements.txt --no-deps torch torchvision
+
+# Core deep learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Image I/O
+Pillow>=9.5.0
+
+# Scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Metrics and visualisation
+matplotlib>=3.7.0
+
+# Optional: Learned Perceptual Image Patch Similarity
+# lpips>=0.1.4
+
+# Dataset download (for benchmark)
+# torchvision includes datasets, no extra dependency needed
+
+# Utilities
+tqdm>=4.65.0

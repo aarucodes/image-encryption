@@ -1,0 +1,30 @@
+name: adv-protect
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+
+  # PyTorch — change cudatoolkit version to match your GPU driver
+  # For CPU only: remove cudatoolkit line and change pytorch channel to cpuonly
+  - pytorch>=2.0.0
+  - torchvision>=0.15.0
+  - cudatoolkit=11.8       # remove for CPU-only
+
+  # Core scientific stack
+  - numpy>=1.24.0
+  - scipy>=1.10.0
+  - pillow>=9.5.0
+  - matplotlib>=3.7.0
+  - tqdm>=4.65.0
+
+  # Optional: LPIPS perceptual metric
+  # - pip:
+  #   - lpips>=0.1.4
+
+  - pip:
+    - lpips>=0.1.4      # comment out if not needed
