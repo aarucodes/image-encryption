@@ -390,9 +390,5 @@ significant center-cropping (≥ 10% removed). Mild transforms do not break it.
 
 ## Credits
 
-- Original repository: [`aarucodes/image-encryption`](https://github.com/aarucodes/image-encryption)  
-  The initial project explored PCA, KMeans, and GMM for pixel-space image transformation.  
-  This prototype extends it with gradient-based adversarial methods and quantitative evaluation.
-
 - PGD attack: Madry et al., *Towards Deep Learning Models Resistant to Adversarial Attacks*, ICLR 2018.
 - Models: torchvision pretrained ResNet-50, MobileNetV3-Large, EfficientNet-B0 (ImageNet-1K).
