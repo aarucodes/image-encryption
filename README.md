@@ -1,6 +1,5 @@
 # Adversarial Image Protection — Research Prototype
-
-> **Evolved from [`aarucodes/image-encryption`](https://github.com/aarucodes/image-encryption)**  
+ 
 > The original project explored PCA / KMeans / GMM as pixel-space "encryption."  
 > This version replaces that approach with gradient-based adversarial perturbation
 > and adds rigorous quantitative evaluation.
